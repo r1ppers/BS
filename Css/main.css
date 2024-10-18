@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: black;
+   }
+   
+   header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   }
+   
+   header ul li {
+    margin: 0 30px;
+   }
+
+   header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+   }
+   header ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+   }
+   
+   ul li{
+    display: inline;
+   }
+   
+   .Logo{
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    transform: scale(2);
+   }
+
+   .Logo:hover{
+    transform: scale(2.2);
+   }
+
+   .dropdown {
+    display: none; /* Скрываем выпадающее меню по умолчанию */
+    position: absolute; /* Позиционирование относительно родительского элемента */
+    background-color: #f9f9f9; /* Цвет фона выпадающего меню */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тень */
+    z-index: 1; /* Выводим выпадающее меню поверх других элементов */
+  }
+  
+  .dropdown li {
+    display: block; /* Каждый пункт выпадающего меню располагается на отдельной строке */
+    padding: 10px;
+  }
+  
+  .dropdown li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Показывать выпадающее меню при наведении на родительский элемент */
+  li:hover .dropdown {
+    display: block;
+  }
+  
+
+  footer{
+    background-color: black;
+    padding: 20px;
+    margin-top: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer i{
+    transform: scale(2);
+    margin: 15px 20px;
+  }
+
+  #connect-with-us{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #connect-with-us a{
+    color: white;
+    text-decoration: none;
+  }
+
+  #connect-with-us a:hover{
+    text-decoration: underline;
+  }
+
+  #connect-with-us .bx-envelope{
+    transform: scale(1.5);
+    margin: 5px 10px;
+  }
+
+  #connect-with-us .bx-phone{
+    transform: scale(1.5);
+    margin: 5px 3px;
+  }
+
+  .image img{
+    height: 250px;
+    border-radius: 7px;
+    margin: 5px;
+  }
+
+  main{
+    margin: 100px;
+  }
+
+  .products{
+    display: flex; /* Включаем Flexbox */
+    flex-wrap: wrap; /* Разрыв строки при недостатке места */
+  }
+
+  .product{
+    width: fit-content;
+    margin: 20px 40px;
+  }
+
+  .product h3{
+    margin: 5px 0;
+  }
+
+  .price-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  .price-info i{
+    transform: scale(1.8);
+  }
+
+  .price-info p{
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .price-info .add-to i{
+    margin: 0 5px;
+  }
+
+  .price-info .add-to button{
+    background-color: white;
+    border: none;
+  }
